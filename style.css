@@ -100,7 +100,8 @@ body{
 }
 .img-box {
   display: flex;
-  position: absolute;
+  position: relative;
+  overflow: visible;
   background-color: #4d4c4c;
   background: url(./img/graphic.png);
   width: 100%;
@@ -264,6 +265,40 @@ body{
 }
 
 
+/* ===================== Section 4 - Card ======================= */
+ .section-four {
+    margin-top: 30px;
+    padding: 40px 0;
+    /* background-color: #dddedf; */
+ }
+
+ .head-line{
+    font-size: 64px;
+    text-transform: capitalize;
+    padding: 40px;
+ }
+ .main-text{
+    font-size: 28px;
+    color: #4d4c4c;
+    line-height: 48px;
+    padding: 0 40px 40px 40px;
+    letter-spacing: 0.5px;
+    
+ }
+ 
+.small-link {
+    color: #4d4c4c;
+    font-weight: 400;
+    
+}
+
+
+.card-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow: scroll;
+}
 
 /* ==================== Mobile ================================ */
 @media screen and (max-width: 464px) {

@@ -2,10 +2,15 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
 }
 
 .container {
-  /* background-color: #c0c0c0; */
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   padding: 40px 40px;
@@ -237,6 +242,28 @@
     line-height: 42px;
     padding: 0 40px;
 }
+
+/* ================ Section 3 =====================  */
+
+.logo-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-top: 20px;
+}
+
+.logo-box > a {
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-between;
+    margin-top: 25px;
+    padding: 0 40px;
+    
+}
+
+
 
 /* ==================== Mobile ================================ */
 @media screen and (max-width: 464px) {

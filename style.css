@@ -116,6 +116,7 @@
   border: 5px solid #f03da5;
   background-color: transparent;
   border-radius: 2em;
+  margin-bottom: 60px;
 }
 
 /* ==================== Burger menu ====================== */
@@ -206,9 +207,35 @@
 /* ========================= Section  2 =========================== */
 
 .section-two {
-    padding: 40px 0;
-    background: rgb(237,43,113);
-    background: linear-gradient(36deg, rgba(237,43,113,0.3275) 0%, rgba(242,122,45,0.4325) 52%, rgba(30,250,11,0.375) 100%);
+  display: flex;
+  width: 100;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  background: rgb(237, 43, 113);
+  background: linear-gradient(
+    36deg,
+    rgba(237, 43, 113, 0.3275) 0%,
+    rgba(242, 122, 45, 0.4325) 52%,
+    rgba(30, 250, 11, 0.375) 100%
+  );
+}
+
+.grad-back {
+  align-items: center;
+  padding: 40px 0 ;
+}
+
+.headline {
+  font-size: 64px;
+  padding: 40px;
+  margin-top: 35px; 
+}
+
+.main-text {
+    font-size: 28px;
+    line-height: 42px;
+    padding: 0 40px;
 }
 
 /* ==================== Mobile ================================ */

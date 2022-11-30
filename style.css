@@ -52,6 +52,9 @@
 
 /* ================ First section ========================== */
 
+.section-box{
+  padding: 0 40px;
+}
 
 
 .clm-one {
@@ -351,7 +354,17 @@ tr > td:nth-child(2) {
   position: absolute;
 }
 
-/* ===============  Section 4 =================================== */
+/* ===============  Section 5 =================================== */
+.section-five {
+  display: flex;
+}
+.clm-pl {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  justify-content: space-between;
+  padding: 0 40px;
+}
 
 .img-box-second {
   display: flex;
@@ -359,11 +372,32 @@ tr > td:nth-child(2) {
   background: url(./img/upsell-footer-image.svg);
   overflow: visible;
   background-repeat: no-repeat;
+  transform: translateY(10em) scale(1.5);
 }
 
 /*  ======================= Footer ===================================== */
 
+.info-down {
+  display: flex;
+  padding-top: 60px;
+}
 
+.main-info {
+  justify-content: flex-start;
+  padding: 0 60px;
+  font-family: "Roboto", sans-serif;;
+}
+
+.logo-bot {
+  display: flex;
+  width: 240px;
+  padding: 40px 0;
+}
+
+.second-ln {
+  margin-top: 10px;
+  margin-bottom: 1em;
+}
 
 
 

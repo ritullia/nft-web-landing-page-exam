@@ -31,7 +31,7 @@
 .links {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 15px;
   padding: 0 30px;
 }
 
@@ -50,24 +50,27 @@
   color: #292727;
 }
 
-/* ================ First section ========================== */
-
-.section-box{
-  padding: 0 40px;
+.links > a:nth-last-child(1) {
+  color: #f03da5;
+  text-transform: capitalize;
 }
 
+/* ================ First section ========================== */
+
+.section-box {
+  padding: 0 40px;
+}
 
 .clm-one {
   display: flex;
   flex-direction: row;
-  background-color: transparent;
+  /* background-color: transparent; */
   justify-content: space-between;
 }
 
 .clm-text {
   flex-direction: column;
-
-  /* background-color: #dddedf; */
+  padding-top: 40px;
 }
 .clm-text a {
   font-size: 24px;
@@ -87,7 +90,6 @@
   line-height: 42px;
   font-weight: 400;
   width: 80%;
- 
 }
 .clm-text h1 {
   font-size: 64px;
@@ -193,7 +195,9 @@
   transition: right 0.25s ease-in-out;
   box-sizing: border-box;
 }
-
+.menu_box > li:nth-last-child(1) {
+  color: #f03da5;
+}
 .menu_item {
   display: block;
   padding: 20px 40px;
@@ -212,7 +216,7 @@
 
 .section-two {
   display: flex;
-  width: 100;
+  width: 100%;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
@@ -234,12 +238,14 @@
   font-size: 64px;
   padding: 40px;
   margin-top: 35px;
+  font-family: "Roboto", sans-serif;
 }
 
 .main-text {
   font-size: 28px;
   line-height: 42px;
   padding: 0 40px;
+  font-family: "Roboto", sans-serif;
 }
 
 /* ================ Section 3 =====================  */
@@ -354,7 +360,7 @@ tr > td:nth-child(2) {
   width: 100%;
   height: 1px;
   background: #58585888;
-  position: absolute;
+  
 }
 
 /* ===============  Section 5 =================================== */
@@ -385,14 +391,14 @@ tr > td:nth-child(2) {
   display: flex;
   flex-direction: column;
   padding-top: 40px;
-  padding-bottom:  60px;
+  padding-bottom: 60px;
 }
 
 .main-info {
   justify-content: flex-start;
   align-content: space-between;
   padding: 0 30px;
-  font-family: "Roboto", sans-serif;;
+  font-family: "Roboto", sans-serif;
 }
 
 .logo-bot {
@@ -408,13 +414,12 @@ tr > td:nth-child(2) {
 
 .links {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
 }
 
 .icons {
   display: flex;
   flex-direction: row;
-  
 }
 .fa-brands {
   margin-left: 20px;
@@ -432,26 +437,21 @@ tr > td:nth-child(2) {
   gap: 40px 80px;
   font-size: 24px;
   line-height: 36px;
-  
 }
 
 .link-clm {
   display: flex;
   flex-direction: column;
-
-
-
 }
 
-.link-clm > h1{
+.link-clm > h1 {
   font-weight: 600;
   color: #4d4c4c;
   text-transform: uppercase;
   margin-bottom: 15px;
   letter-spacing: 1.5px;
-
 }
-.link-clm > a{
+.link-clm > a {
   text-decoration: none;
   flex-direction: column;
   color: #4d4c4c;
@@ -463,10 +463,9 @@ tr > td:nth-child(2) {
   justify-content: flex-start;
   margin-left: 20px;
   padding: 40px 0;
- 
 }
 
-.bt-text > p{
+.bt-text > p {
   font-size: 24px;
   letter-spacing: 0.5px;
   color: #4d4c4cc0;
@@ -474,11 +473,15 @@ tr > td:nth-child(2) {
 
 /* pakeitimas */
 
-
 /* ==================== Mobile ================================ */
 @media screen and (max-width: 464px) {
   .hamburger_menu {
     display: block;
+  }
+
+  .container{
+    background-color: #ffffff;
+    position: sticky;
   }
 
   .links {
@@ -512,5 +515,138 @@ tr > td:nth-child(2) {
 @media screen and (min-width: 1024px) {
   .hamburger_menu {
     display: none;
+  }
+
+  .section-box {
+    padding: 60px 40px;
+  }
+  .clm-text {
+    padding-top: 40px;
+  }
+  .img-box {
+    width: 95%;
+    background-repeat: no-repeat;
+    transform: scale(0.8) translateY(-10px);
+  }
+
+  .clm-text a {
+    font-size: 16px;
+    color: #f03da5;
+    padding: 10px 0;
+  }
+  .clm-text h1 {
+    padding: 30px 0;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    word-break: keep-all;
+    letter-spacing: 3px;
+  }
+  .clm-text p {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .btn-second {
+    width: 8em;
+    padding: 18px;
+    margin-top: 22px;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .headline {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 80px;
+    padding: 5px 40px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .main-text {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 40px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .logo-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 40px;
+  }
+
+  .logo-box > a {
+    width: 100%;
+  }
+  
+
+  .section-four {
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .head-line {
+    font-size: 54px;
+    font-weight: 500;
+    padding: 30px 40px;
+    letter-spacing: 2px;
+  }
+
+  .main-text {
+    font-size: 24px;
+    line-height: 20px;
+    padding: 0 40px 80px 40px;
+    letter-spacing: 0.8px;
+  }
+
+  .card-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    overflow: visible;
+  }
+
+  .card {
+    width: 290px;
+  }
+
+  .card-container {
+    padding: 10px 15px;
+  }
+
+  .card-table {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .small-img {
+    width: 10%;
+  }
+
+  th {
+    font-size: 12px;
+  }
+
+  .numbers {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+  }
+
+  .line {
+    font-size: 24px;
+    letter-spacing: 0.3px;
+  }
+
+  .numbers {
+    font-size: 20px;
+  }
+
+  .img-second {
+    transform: translateY(3em) scale(1.1) translateX(16em);
   }
 }

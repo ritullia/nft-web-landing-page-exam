@@ -1,82 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:ital@0;1&family=Dosis:wght@400;600&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fcb70e3dea.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/fcb70e3dea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:ital@0;1&family=Dosis:wght@400;600&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Exam</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="container">
-        <div class="logo-cintainer">
-            <img src="./img/logo.svg" alt="Logo" class="img-logo">
+      <div class="logo-container">
+        <img src="./img/logo.svg" alt="Logo" class="img-logo" />
+      </div>
+      <div class="nav-bar">
+        <nav class="links">
+          <a href="#" class="link">Features</a>
+          <a href="#" class="link">About</a>
+          <a href="#" class="link">Launch</a>
+          <div>
+            <button class="btn">Sign up</button>
+          </div>
+        </nav>
+        <div class="hamburger_menu">
+          <input id="burger_menu" type="checkbox" />
+          <label for="burger_menu" class="menu_btn">
+            <span></span>
+          </label>
+          <ul class="menu_box">
+            <li class="menu_item">Features</li>
+            <li class="menu_item">About</li>
+            <li class="menu_item">Launch</li>
+            <li class="menu_item">Sign up</li>
+          </ul>
         </div>
-        <div class="nav-bar">
-            <nav class="links">
-                <a href="#" class="link">Features</a>
-                <a href="#" class="link">About</a>
-                <a href="#" class="link">Launch</a>
-                <div>
-                    <button class="btn">Sign up</button>
-                </div>
-            </nav>
-            <div class="hamburger_menu">
-                <input id="burger_menu" type="checkbox"/>
-                <label for="burger_menu" class="menu_btn">
-                  <span></span>
-                </label>
-                  <ul class="menu_box">
-                    <li class="menu_item">Features</li>
-                    <li class="menu_item">About</li>
-                    <li class="menu_item">Launch</li>
-                    <li class="menu_item">Sign up</li>
-                  </ul>
-              </div>
-        </div>
+      </div>
     </header>
-    <main class="section-box">
-        <section>
-            <div class="clm-one ">
-               
-                <div class=" clm-text">
-                    <a href="">Launching soon</a>
-                    <h1>An NFT like no other</h1>
-                    <p>Don't miss out the releas of our new NFT. Sign up below to recieve updates when we go live</p>
-                    <button class="btn-second">Sign up</button>
-                </div>
-                <div class="img-box">
-                </div>
-                
-            </div>           
-        </section>
-        <section class="section-two">
-            <div class="grad-back">
-                <h1>
-                    Free NFT for early birds
-                </h1>
-                <p>Sign up today and you'll get a free NFT when we launch</p>
+    <section class="section-box">
+      <div class="clm-one">
+        <div class="clm-text">
+          <a href="">Launching soon</a>
+          <h1>An NFT like no other</h1>
+          <p>
+            Don't miss out the releas of our new NFT. Sign up below to recieve
+            updates when we go live
+          </p>
+          <button class="btn-second">Sign up</button>
+        </div>
+        <div class="img-box"></div>
+      </div>
+    </section>
+    <section class="section-two">
+      <div class="grad-back">
+        <h1 class="headline">
+          Free NFT for early birds
+        </h1>
+        <p class="main-text">
+          Sign up today and you'll get a free NFT when we launch
+        </p>
+      </div>
+    </section>
+    <section class="logo-clm">
+      <div class="logo-box">
+        <a href="#" class="comp-logo"
+          ><img src="./img/companies/1.svg" alt=""
+        /></a>
+        <a href="#" class="comp-logo"
+          ><img src="./img/companies/2.svg" alt=""
+        /></a>
+        <a href="#" class="comp-logo"
+          ><img src="./img/companies/3.svg" alt=""
+        /></a>
+        <a href="#" class="comp-logo"
+          ><img src="./img/companies/5.svg" alt=""
+        /></a>
+      </div>
+    </section>
+    <section class="section-four">
+      <div>
+        <h1 class="head-line">LE super rare auction</h1>
+        <p class="main-text">
+          We have released four limited edition NFTs early which can be on via
+          <a href="" class="small-link">OpenSea</a>.
+        </p>
+      </div>
+      <div class="card-box">
+        <div class="column">
+          <div class="card">
+            <img src="./img/ntfs/ntf-1.svg" alt="nft-2" />
+            <div class="card-container">
+              <table class="card-table">
+                <tr class="table-clm">
+                  <th>GLOOP SERIES</th>
+                  <th>TOP BID</th>
+                </tr>
+                <tr>
+                  <td class="line">
+                    Purple man
+                  </td>
+                  <td class="numbers">
+                    <img src="./img/eth.svg" alt="eth" /> 2.99 ETH
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    #12983
+                  </td>
+                  <td>1 day left</td>
+                </tr>
+              </table>
             </div>
-        </section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <footer>
-            <div>
-                <p>
-    
-                </p>
-            </div>    
-    </main>
-    <footer>
-
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="./img/ntfs/nft-2.svg" alt="nft-2" class="card-img" />
+            <div class="card-container">
+              <table class="card-table">
+                <tr class="table-clm">
+                  <th>GLOOP SERIES</th>
+                  <th>TOP BID</th>
+                </tr>
+                <tr>
+                  <td class="line">
+                    Beige
+                  </td>
+                  <td class="numbers">
+                    <img src="./img/eth.svg" alt="eth" /> 2.99 ETH
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    #12983
+                  </td>
+                  <td>1 day left</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="./img/ntfs/ntf-3.svg" alt="nft-2" />
+            <div class="card-container">
+              <table class="card-table">
+                <tr class="table-clm">
+                  <th>GLOOP SERIES</th>
+                  <th>TOP BID</th>
+                </tr>
+                <tr>
+                  <td class="line">
+                    Red men
+                  </td>
+                  <td class="numbers">
+                    <img src="./img/eth.svg" alt="eth" /> 2.99 ETH
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    #12983
+                  </td>
+                  <td>1 day left</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="./img/ntfs/ntf-4.svg" alt="nft-2" />
+            <div class="card-container">
+              <table class="card-table">
+                <tr class="table-clm">
+                  <th>GLOOP SERIES</th>
+                  <th>TOP BID</th>
+                </tr>
+                <tr>
+                  <td class="line">
+                    Green
+                  </td>
+                  <td class="numbers">
+                    <img src="./img/eth.svg" alt="eth" /> 2.99 ETH
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    #12983
+                  </td>
+                  <td>1 day left</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="line-box">
+      <div class="line-element"></div>
+    </div>
+    <section class="section-five">
+      <div class="line-container">
+        <span class="line-item"></span>
+      </div>
+      <div>
+        <div class="clm-one clm-pl">
+          <div class="clm-text">
+            <a href="">Launching soon</a>
+            <h1>An NFT like no other</h1>
+            <p>
+              Don't miss out the releas of our new NFT. Sign up below to recieve
+              updates when we go live
+            </p>
+            <button class="btn-second">Sign up</button>
+          </div>
+          <div class="img-second"></div>
+        </div>
+      </div>
+    </section>
+    <div class="line-box second-ln">
+      <div class="line-element"></div>
+    </div>
+    <footer class="info-down">
+      <div class="main-info">
+        <div class="logo-container logo-bot">
+          <img src="./img/logo.svg" alt="Logo" class="img-logo" />
+        </div>
+        <p class="main-text">Exclusive NFT collection</p>
+        <div class="icons">
+          <a href="" class="icon-item"><i class="fa-brands fa-facebook"></i></a>
+          <a href="" class="icon-item"><i class="fa-brands fa-twitter"></i></a>
+          <a href="" class="icon-item"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="" class="icon-item"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="links-container">
+          <div class="link-clm">
+            <h1>About</h1>
+            <a href="">About</a>
+            <a href="">Terms</a>
+            <a href="">Legal</a>
+          </div>
+          <div class="link-clm">
+            <h1>NFT</h1>
+            <a href="">OpenSea</a>
+            <a href="">Maker</a>
+            <a href="">Learn</a>
+          </div>
+        </div>
+        <div class="links-container">
+          <div class="link-clm">
+            <h1>Contact</h1>
+            <a href="">Press</a>
+            <a href="">Support</a>
+          </div>
+          <div class="link-clm">
+            <h1>Social</h1>
+            <a href="">Twitter</a>
+            <a href="">Instagram</a>
+          </div>
+        </div>
+        <div class="bt-text">
+          <p> <i class="fa-regular fa-copyright"></i> Copyright 2022 NFTlanding</p>
+        </div>
+      </div>
     </footer>
-
-    
-</body>
+  </body>
 </html>

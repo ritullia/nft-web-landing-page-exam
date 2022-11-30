@@ -78,6 +78,7 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   padding: 40px 0;
+  font-family: "Roboto", sans-serif;
 }
 .clm-text p {
   font-size: 24px;
@@ -86,6 +87,7 @@
   line-height: 42px;
   font-weight: 400;
   width: 80%;
+ 
 }
 .clm-text h1 {
   font-size: 64px;
@@ -98,10 +100,11 @@
 }
 .img-box {
   display: flex;
+  width: 100%;
+  background: url(./img/graphic.svg);
   overflow: visible;
-  background: url(./img/graphic.png);
-  width: 50%;
   background-repeat: no-repeat;
+  transform: translateX(-5em) scale(0.5);
 }
 
 /* ================= Button ================== */
@@ -366,25 +369,29 @@ tr > td:nth-child(2) {
   padding: 0 40px;
 }
 
-.img-box-second {
+.img-second {
   display: flex;
   width: 100%;
   background: url(./img/upsell-footer-image.svg);
   overflow: visible;
   background-repeat: no-repeat;
   transform: translateY(10em) scale(1.5);
+  position: relative;
 }
 
 /*  ======================= Footer ===================================== */
 
 .info-down {
   display: flex;
-  padding-top: 60px;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom:  60px;
 }
 
 .main-info {
   justify-content: flex-start;
-  padding: 0 60px;
+  align-content: space-between;
+  padding: 0 30px;
   font-family: "Roboto", sans-serif;;
 }
 
@@ -398,6 +405,73 @@ tr > td:nth-child(2) {
   margin-top: 10px;
   margin-bottom: 1em;
 }
+
+.links {
+  display: flex;
+  flex-direction: row; 
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  
+}
+.fa-brands {
+  margin-left: 20px;
+  padding: 0 5px;
+  font-size: 32px;
+  color: #4d4c4ca1;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  gap: 40px 80px;
+  font-size: 24px;
+  line-height: 36px;
+  
+}
+
+.link-clm {
+  display: flex;
+  flex-direction: column;
+
+
+
+}
+
+.link-clm > h1{
+  font-weight: 600;
+  color: #4d4c4c;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 1.5px;
+
+}
+.link-clm > a{
+  text-decoration: none;
+  flex-direction: column;
+  color: #4d4c4c;
+  line-height: 40px;
+}
+
+.bt-text {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+  padding: 40px 0;
+ 
+}
+
+.bt-text > p{
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  color: #4d4c4cc0;
+}
+
 
 
 

@@ -5,9 +5,7 @@
   box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-}
+
 
 .container {
   background-color: #ffffff;
@@ -100,13 +98,11 @@ body{
 }
 .img-box {
   display: flex;
-  position: relative;
   overflow: visible;
-  background-color: #4d4c4c;
   background: url(./img/graphic.png);
-  width: 100%;
+  width: 50%;
   background-repeat: no-repeat;
-  background-position: -425px;
+ 
 }
 
 /* ================= Button ================== */
@@ -296,14 +292,69 @@ body{
 .card-box {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 40px;
     overflow: scroll;
+    padding: 0 40px;
+    
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+}
+.card-container {
+    background-color: #dddedf;
+    flex-direction: row;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 30px 20px;
 }
 
+.card-table {
+    width: 100%;
+    font-size: 4vw;
+    
+}
+
+th {
+    font-size: 3vw;
+    color: #e97122;
+    padding: 10px 5px; 
+}
+
+tr > th:nth-child(1) {
+  text-align: left;
+  padding: 10px 5px;
+ 
+}
+tr > th:nth-child(2) {
+  text-align: right;
+
+}
+
+tr> td:nth-child(2){
+  text-align: right;
+  padding: 10px 5px;
+}
+.line{
+  font-size: 6vw;
+  letter-spacing: 0.5px;
+}
+
+/* ===============  Section 4 =================================== */
+
+.img-box-second {
+  display: flex;
+  width: 100%;
+  background: url(./img/upsell-footer-image.svg);
+  overflow: visible;
+  background-repeat: no-repeat;
+}
 /* ==================== Mobile ================================ */
 @media screen and (max-width: 464px) {
   .hamburger_menu {
     display: block;
+  
   }
 
   .links {

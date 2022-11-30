@@ -216,7 +216,7 @@
 
 .section-two {
   display: flex;
-  width: 100;
+  width: 100%;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
@@ -238,12 +238,14 @@
   font-size: 64px;
   padding: 40px;
   margin-top: 35px;
+  font-family: "Roboto", sans-serif;
 }
 
 .main-text {
   font-size: 28px;
   line-height: 42px;
   padding: 0 40px;
+  font-family: "Roboto", sans-serif;
 }
 
 /* ================ Section 3 =====================  */
@@ -512,7 +514,6 @@ tr > td:nth-child(2) {
 
   .section-box {
     padding: 60px 40px;
-    
   }
   .clm-text {
     padding-top: 40px;
@@ -521,7 +522,6 @@ tr > td:nth-child(2) {
     width: 95%;
     background-repeat: no-repeat;
     transform: scale(0.8) translateY(-10px);
-    
   }
 
   .clm-text a {
@@ -540,7 +540,7 @@ tr > td:nth-child(2) {
     width: 100%;
     font-family: "Roboto", sans-serif;
   }
-  
+
   .btn-second {
     width: 8em;
     padding: 18px;
@@ -549,8 +549,90 @@ tr > td:nth-child(2) {
     font-weight: 600;
     cursor: pointer;
   }
-  
 
+  .headline {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 80px;
+    padding: 5px 40px;
+    font-family: "Roboto", sans-serif;
+  }
 
-  
+  .main-text {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 40px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .logo-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 40px;
+  }
+
+  .section-four {
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .head-line {
+    font-size: 54px;
+    font-weight: 500;
+    padding: 30px 40px;
+    letter-spacing: 2px;
+  }
+
+  .main-text {
+    font-size: 24px;
+    line-height: 20px;
+    padding: 0 40px 80px 40px;
+    letter-spacing: 0.8px;
+  }
+
+  .card-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: visible;
+  }
+
+  .card {
+    width: 340px;
+  }
+
+  .card-container {
+    padding: 10px 15px;
+  }
+
+  .card-table {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .small-img {
+    width: 10%;
+  }
+
+  th {
+    font-size: 12px;
+  }
+
+  .numbers {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+  }
+
+  .line {
+    font-size: 28px;
+    letter-spacing: 0.3px;
+  }
+
+  .numbers {
+    font-size: 20px;
+  }
 }

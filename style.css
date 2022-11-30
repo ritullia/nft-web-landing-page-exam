@@ -5,8 +5,6 @@
   box-sizing: border-box;
 }
 
-
-
 .container {
   background-color: #ffffff;
   display: flex;
@@ -25,6 +23,7 @@
 .logo-container {
   display: flex;
 }
+
 .img-logo {
   width: 100%;
 }
@@ -53,9 +52,7 @@
 
 /* ================ First section ========================== */
 
-.section-box {
-  padding: 0 40px;
-}
+
 
 .clm-one {
   display: flex;
@@ -102,7 +99,6 @@
   background: url(./img/graphic.png);
   width: 50%;
   background-repeat: no-repeat;
- 
 }
 
 /* ================= Button ================== */
@@ -225,120 +221,134 @@
 
 .grad-back {
   align-items: center;
-  padding: 40px 0 ;
+  padding: 40px 0;
 }
 
 .headline {
   font-size: 64px;
   padding: 40px;
-  margin-top: 35px; 
+  margin-top: 35px;
 }
 
 .main-text {
-    font-size: 28px;
-    line-height: 42px;
-    padding: 0 40px;
+  font-size: 28px;
+  line-height: 42px;
+  padding: 0 40px;
 }
 
 /* ================ Section 3 =====================  */
 
 .logo-box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-top: 20px;
 }
 
 .logo-box > a {
-    display: flex;
-    justify-content: flex-start;
-    align-content: space-between;
-    margin-top: 25px;
-    padding: 0 40px;
-    
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  margin-top: 25px;
+  padding: 0 40px;
 }
-
 
 /* ===================== Section 4 - Card ======================= */
- .section-four {
-    margin-top: 30px;
-    padding: 40px 0;
-    /* background-color: #dddedf; */
- }
-
- .head-line{
-    font-size: 64px;
-    text-transform: capitalize;
-    padding: 40px;
- }
- .main-text{
-    font-size: 28px;
-    color: #4d4c4c;
-    line-height: 48px;
-    padding: 0 40px 40px 40px;
-    letter-spacing: 0.5px;
-    
- }
- 
-.small-link {
-    color: #4d4c4c;
-    font-weight: 400;
-    
+.section-four {
+  margin-top: 30px;
+  padding: 40px 0;
+  /* background-color: #dddedf; */
 }
 
+.head-line {
+  font-size: 64px;
+  text-transform: capitalize;
+  padding: 40px;
+}
+.main-text {
+  font-size: 28px;
+  color: #4d4c4c;
+  line-height: 48px;
+  padding: 0 40px 40px 40px;
+  letter-spacing: 0.5px;
+}
+
+.small-link {
+  color: #4d4c4c;
+  font-weight: 400;
+}
 
 .card-box {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    overflow: scroll;
-    padding: 0 40px;
-    
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  overflow: scroll;
+  padding: 0 40px;
 }
 .card {
-    display: flex;
-    flex-direction: column;
-    width: 440px;
+  display: flex;
+  flex-direction: column;
+  width: 440px;
 }
 .card-container {
-    background-color: #dddedf;
-    flex-direction: row;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 30px 20px;
+  background-color: #dddedf;
+  flex-direction: row;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 30px 20px;
 }
 
 .card-table {
-    width: 100%;
-    font-size: 4vw;
-    
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 th {
-    font-size: 3vw;
-    color: #e97122;
-    padding: 10px 5px; 
+  font-size: 16px;
+  color: #e97122;
+  padding: 10px 5px;
+  font-weight: 600;
 }
 
 tr > th:nth-child(1) {
   text-align: left;
   padding: 10px 5px;
- 
 }
 tr > th:nth-child(2) {
   text-align: right;
-
+  color: #4d4c4c;
 }
 
-tr> td:nth-child(2){
+tr > td:nth-child(2) {
   text-align: right;
   padding: 10px 5px;
 }
-.line{
-  font-size: 6vw;
+
+.numbers {
+  font-size: 24px;
   letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.line {
+  font-size: 32px;
+  letter-spacing: 0.5px;
+}
+
+.line-box {
+  margin-top: 60px;
+  margin-bottom: 10em;
+}
+.line-element {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #58585888;
+  position: absolute;
 }
 
 /* ===============  Section 4 =================================== */
@@ -350,11 +360,17 @@ tr> td:nth-child(2){
   overflow: visible;
   background-repeat: no-repeat;
 }
+
+/*  ======================= Footer ===================================== */
+
+
+
+
+
 /* ==================== Mobile ================================ */
 @media screen and (max-width: 464px) {
   .hamburger_menu {
     display: block;
-  
   }
 
   .links {
